@@ -124,9 +124,10 @@ body {
       transform: translateY(0);
     }
   }
-  
-  @media (max-width: 500px) {
-        .wallpaper {
-          display: none;
-        }
+
+  @media (max-width: 768px) {
+    .wallpaper {
+      display: none;
+    }
   }
+  
