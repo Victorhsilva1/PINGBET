@@ -125,9 +125,9 @@ body {
     }
   }
   
-  @media (max-width: 600px) {
+  @media (max-width: 500px) {
         .wallpaper {
-            width: 426px;
+            width: 400px;
             height: 200px;
         }
   }
