@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body class="container-fluid" style="background-color: rgba(192, 138, 56, 0.137);">
+    <nav> 
+        <h1 class="text-center text-white fs-1" style="font-size: 55px; ">PINGBET </h1>
+        <img src="" alt="">
+    </nav>
+   
+        <img src="img/wallpaper.jpg" alt="" class="wallpaper ">
+  <p class="text-center text-black" style="font-size: 30px; margin-top: 10px;"> TODOS OS JOGOS</p>
+    <div class="principal">
+        <p class="text-center text-white fs-2" style="
+    font-size: 20px; margin-top: 10px;"> QUARTAS DE FINAIS </p>
+   <div class="match-card">
+    <div class="match-info">
+      <span>22/04 - 21:30</span>
+      <span class="teams">Japonegro x Pedrão</span>
+    </div>
+    <div class="odds">
+      <div class="odd" onclick="adicionarBilhete('Japonegro Vence', '1.25')">1.25</div>
+      <div class="odd" onclick="adicionarBilhete('Pedro Vence ', '11.80')">9.80</div>
+    </div>
+  </div>
+
+  <div class="match-card">
+    <div class="match-info">
+      <span>22/04 - 21:30</span>
+      <span class="teams">João Vitor x Felipe </span>
+    </div>
+    <div class="odds">
+      <div class="odd" onclick="adicionarBilhete('João vence', '1.74')">1.74</div>
+      <div class="odd" onclick="adicionarBilhete('Felipe vence', '1.85')">1.85</div>
+    </div>
+  </div>
+</div>
+<div class="semis">
+    <p class="text-center text-white fs-2" style="
+    font-size: 20px; margin-top: 10px;"> SEMI-FINAL </p>
+  <div class="match-card">
+    <div class="match-info">
+      <span>22/04 - 21:30</span>
+      <span class="teams">Santista x Gustavo</span>
+    </div>
+    <div class="odds">
+      <div class="odd" onclick="adicionarBilhete('Santista vence', '3.00')">1.97</div>
+      <div class="odd" onclick="adicionarBilhete('Gustavo vence', '2.47')">1.89</div>
+    </div>
+  </div>
+</div>
+
+  <div id="bilhete">
+    <h3>Bilhete</h3>
+    <div id="apostas"></div>
+  </div>
+
+<footer>
+    <p class="text-center" style="font-size: 15px ;"> PINGBET AQUI A GENTE FAZ ACONTECER! VAI CORRER ? APOSTE LOGO E FAÇA SUA FEZINHA NO CAMPEÃO</p>
+  
+</footer>
+<script>
+    function adicionarBilhete(jogo, odd) {
+    const apostas = document.getElementById('apostas');
+    const div = document.createElement('div');
+    div.className = 'aposta';
+    div.textContent = `${jogo} - Odd: ${odd}`;
+    apostas.appendChild(div);
+  }
+</script>
+</body>
+</html>
